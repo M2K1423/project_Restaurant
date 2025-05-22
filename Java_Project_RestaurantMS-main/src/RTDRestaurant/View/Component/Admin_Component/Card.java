@@ -116,4 +116,5 @@ public class Card extends javax.swing.JPanel {
     private javax.swing.JLabel lbTitle;
     private javax.swing.JLabel lbValues;
     // End of variables declaration//GEN-END:variables
+    // test commit
 }
