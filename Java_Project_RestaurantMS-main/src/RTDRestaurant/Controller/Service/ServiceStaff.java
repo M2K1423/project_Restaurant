@@ -1,4 +1,4 @@
-package RTDRestaurant.Controller.Connection.Service;
+package RTDRestaurant.Controller.Service;
 
 import RTDRestaurant.Controller.Connection.DatabaseConnection;
 import RTDRestaurant.Model.ModelBan;
