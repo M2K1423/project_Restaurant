@@ -5,7 +5,7 @@ import RTDRestaurant.Controller.Event.EventMenuSelected;
 import RTDRestaurant.Model.ModelMenu;
 import RTDRestaurant.View.Swing.CustomScrollBar.ScrollBarCustom;
 import RTDRestaurant.View.Swing.MenuAnimation;
-import RTDRestaurant.View.Swing.MenuItem;
+
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.GradientPaint;
@@ -13,6 +13,8 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import javax.swing.ImageIcon;
+
+import RTDRestaurant.View.Swing.WrapLayout;
 import net.miginfocom.swing.MigLayout;
 
 public class MenuS extends javax.swing.JPanel {
@@ -52,7 +54,7 @@ public class MenuS extends javax.swing.JPanel {
 
     //Add Panel MenuIteam vào Panel Menu
     private void addMenu(ModelMenu menu) {
-        panel.add(new MenuItem(menu, getEventMenu(), event, panel.getComponentCount()), "h 40!");
+        panel.add(new WrapLayout.MenuItem(menu, getEventMenu(), event, panel.getComponentCount()), "h 40!");
     }
 
     private EventMenu getEventMenu() {
